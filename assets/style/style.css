@@ -96,7 +96,7 @@ html {
 }
 
 .gray {
-    color: var(--white) !important;
+    color: var(--gray) !important;
 }
 
 /* ============================= FONT SIZES ============================= */
@@ -183,6 +183,30 @@ html {
     color: var(--blue) !important;
     box-shadow: inset 0 0 0 2em var(--white);
     box-shadow: inset 0 0 0 2em var(--white);
+    border: 2px solid var(--blue);
+}
+
+.blue-btn {
+    font-family: Gilroy-SemiBold;
+    font-size: var(--font-xs);
+    font-weight: 600;
+    color: var(--blue);
+    background-color: transparent;
+    padding: 8px 40.5px 10px 40.5px;
+    border: 2px solid var(--blue);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.blue-btn:focus,
+.blue-btn:hover {
+    color: var(--white) !important;
+    box-shadow: inset 0 0 0 2em var(--blue);
+    box-shadow: inset 0 0 0 2em var(--blue);
     border: 2px solid var(--blue);
 }
 
@@ -285,6 +309,15 @@ html {
     background: linear-gradient(253.87deg, #103393 25.13%, var(--blue) 89.37%);
 }
 
+.hero-section:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: var(--white);
+    bottom: -2px;
+}
+
 .hero-content {
     min-height: 65vh;
 }
@@ -306,6 +339,16 @@ html {
     margin-left: -80px;
     z-index: 6;
     position: absolute;
+}
+
+/* ========================= GROW SECTION ===================== */
+.arrow02 {
+    transform: translate(15px, 0px);
+}
+
+.side-img01 {
+    top: 90px;
+    right: 0;
 }
 
 @media (max-width:1599.98px) {
@@ -333,11 +376,12 @@ html {
         padding-bottom: 190px;
     }
 
-    .hero_img01 {
-        padding-right: 38px;
-        max-width: 710px;
-    }
 }
+
+/* .hero_img01 {
+    padding-right: 38px;
+    max-width: 710px;
+} */
 
 @media (max-width:1399.98px) {
     .dots-img {
@@ -380,6 +424,11 @@ html {
     .dots-img {
         display: none;
     }
+
+    .side-img01 {
+        max-width: 80px;
+        top: 0px;
+    }
 }
 
 @media (max-width:991.98px) {
@@ -390,6 +439,10 @@ html {
     .heading {
         line-height: initial;
     }
+
+    .arrow02 {
+        max-width: 90px;
+    }
 }
 
 @media (max-width:575.98px) {
@@ -399,6 +452,14 @@ html {
 
     .para {
         line-height: inherit;
+    }
+
+    .hero-section {
+        padding-bottom: 48px;
+    }
+
+    .arrow02 {
+        max-width: 80px;
     }
 }
 
