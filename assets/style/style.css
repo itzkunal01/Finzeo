@@ -1,0 +1,296 @@
+body,
+html {
+    font-family: Gilroy-Light;
+    font-weight: 600;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 0px;
+}
+
+.no-scroll-y {
+    overflow-y: hidden !important;
+}
+
+.no-scroll-x {
+    overflow-x: hidden !important;
+}
+
+@font-face {
+    font-family: Gilroy-Light;
+    src: url("../fonts/Gilroy-Light.ttf");
+}
+
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url("../fonts/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url("../fonts/Gilroy-ExtraBold.ttf");
+}
+
+.ff-gilroy-light {
+    font-family: Gilroy-Light;
+}
+
+.ff-gilroy-semiBold {
+    font-family: Gilroy-SemiBold;
+}
+
+.ff-gilroy-bold {
+    font-family: Gilroy-Bold;
+}
+
+.ff-gilroy-extrabold {
+    font-family: Gilroy-ExtraBold;
+}
+
+:root {
+    /* FONT SIZES */
+    --font-xs: 16px;
+    --font-sm: 20px;
+    --font-md: 24px;
+    --font-lg: 40px;
+    /* COLORS */
+    --white: #FFFFFF;
+    --black: #020817;
+    --light-blue: #E8EDFB;
+    --blue: #1D4ED8;
+    --gray: #80838B;
+}
+
+/* @media (max-width:767.98px) {
+    :root {}
+} */
+/* ============================= COLORS ============================= */
+.white {
+    color: var(--white) !important;
+}
+
+.black {
+    color: var(--black) !important;
+}
+
+.light-blue {
+    color: var(--light-blue) !important;
+}
+
+.blue {
+    color: var(--blue) !important;
+}
+
+.gray {
+    color: var(--white) !important;
+}
+
+/* ============================= FONT SIZES ============================= */
+.font-xs {
+    font-size: var(--font-xs) !important;
+}
+
+.font-sm {
+    font-size: var(--font-sm) !important;
+}
+
+.font-md {
+    font-size: var(--font-md) !important;
+}
+
+.font-lg {
+    font-size: var(--font-lg) !important;
+}
+
+/* ============================= FONT WEIGHT ============================= */
+.fw_normal {
+    font-weight: 400 !important;
+}
+
+.fw_medium {
+    font-weight: 500 !important;
+}
+
+.fw_semibold {
+    font-weight: 600 !important;
+}
+
+.fw_bold {
+    font-weight: 700 !important;
+}
+
+.fw_extrabold {
+    font-weight: 800 !important;
+}
+
+/* ================================= COMMON CLASSES========================= */
+.heading {
+    font-size: var(--font-lg);
+    font-weight: 700;
+    line-height: 48.36px;
+    font-family: Gilroy-Bold;
+}
+
+.sub-heading {
+    font-size: var(--font-md);
+    font-weight: 600;
+    font-family: Gilroy-SemiBold;
+}
+
+.para {
+    font-size: var(--font-xs);
+    font-weight: 400;
+    line-height: 22.88px;
+    font-family: Gilroy-Light;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.common-btn {
+    font-family: Gilroy-SemiBold;
+    font-size: var(--font-md);
+    font-weight: 600;
+    color: var(--white);
+    background-color: transparent;
+    padding: 8px 40.5px 10px 40.5px;
+    border: 2px solid var(--light-blue);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.common-btn:hover {
+    color: var(--white) !important;
+    opacity: 85%;
+}
+
+/* ========================= NAVBAR ===================== */
+.focus-0 .form-select {
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+.nav-link {
+    font-family: Gilroy-Light;
+    font-size: var(--font-xs) !important;
+    font-weight: 400 !important;
+    color: var(--white) !important;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+
+    position: relative;
+
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: 4px;
+    left: 0;
+    background-color: var(--white);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.nav-link:hover {
+    color: var(--white) !important;
+}
+
+.active {
+    font-family: Gilroy-SemiBold;
+    color: var(--white) !important;
+    font-weight: 600 !important;
+}
+
+/* .middle {
+    position: relative;
+}
+
+.middle:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 4px;
+    left: 0;
+    background-color: var(--orange);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.middle:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+} */
+
+.navbar-toggler {
+    border: 2px solid;
+}
+
+.navbar-light .navbar-toggler {
+    color: var(--white) !important;
+    border-color: var(--white) !important;
+}
+
+.navbar-toggler:focus {
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../img/svg/toogle-navbar.svg") !important;
+}
+
+.text-transparent {
+    color: transparent !important;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.hero-content {
+    min-height: 70vh;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(253.87deg, #103393 25.13%, var(--blue) 89.37%);
+}
+
+/* .hero-img {
+    top: 0;
+    right: 0;
+} */
+
+.hero_img01 {
+    top: 290px;
+    right: 0;
+}
+
+@media (min-width:1400px) {
+    .container_modified {
+        max-width: 1140px !important;
+        /* max-width: 1230px !important; */
+        padding-left: 45px;
+    }
+}
