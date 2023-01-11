@@ -351,6 +351,43 @@ html {
     right: 0;
 }
 
+/* ========================= FiINZEO SECTION ===================== */
+.finzeo-card {
+    box-shadow: 0px 4px 24px 0px #00000012;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 394px;
+    max-height: 394px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.finzeo-card:hover {
+    background: linear-gradient(175.43deg, #012CA6 3.7%, rgba(29, 78, 216, 0.91) 47.37%, #0330AF 97.56%);
+    transform: translateY(-15px);
+}
+
+.finzeo-card h5,
+.finzeo-card p {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.finzeo-card:hover h5,
+.finzeo-card:hover p {
+    color: var(--white) !important;
+}
+
+.fin-card-img {
+    min-height: 148px;
+}
+
+.finzeo-card p {
+    line-height: 18.56px;
+}
+
 @media (max-width:1599.98px) {
     .hero-section {
         padding-bottom: 236px;
