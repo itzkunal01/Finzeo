@@ -78,6 +78,12 @@ html {
     }
 }
 
+@media (max-width:575.98px) {
+    :root {
+        --font-lg: 24px;
+    }
+}
+
 /* ============================= COLORS ============================= */
 .white {
     color: var(--white) !important;
@@ -356,16 +362,14 @@ html {
     box-shadow: 0px 4px 24px 0px #00000012;
     border-radius: 10px;
     height: 100%;
-    min-height: 394px;
-    max-height: 394px;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
 .finzeo-card:hover {
+    transform: translateY(-10px);
     background: linear-gradient(175.43deg, #012CA6 3.7%, rgba(29, 78, 216, 0.91) 47.37%, #0330AF 97.56%);
-    transform: translateY(-15px);
 }
 
 .finzeo-card h5,
@@ -446,6 +450,31 @@ html {
     top: 0px;
 }
 
+/* ========================= OUR SERVICES SECTION ============ */
+.service-card {
+    border: 4px solid var(--blue);
+    border-radius: 12px;
+    height: 100%;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card-img {
+    min-height: 116px;
+}
+
+@media (min-width:1400px) {
+    .container_modified {
+        max-width: 1210px !important;
+        padding-left: 35px;
+    }
+}
+
 @media (max-width:1599.98px) {
     .hero-section {
         padding-bottom: 236px;
@@ -473,11 +502,6 @@ html {
 
 }
 
-/* .hero_img01 {
-    padding-right: 38px;
-    max-width: 710px;
-} */
-
 @media (max-width:1399.98px) {
     .dots-img {
         margin-top: -54px;
@@ -498,6 +522,15 @@ html {
 
     .dots-img {
         margin-top: -70px;
+    }
+
+    .arrow03 {
+        left: 40px;
+        min-width: 90px;
+    }
+
+    .merchant-dots-img {
+        margin-top: -80px;
     }
 }
 
@@ -524,6 +557,24 @@ html {
         max-width: 80px;
         top: 0px;
     }
+
+    .arrow03 {
+        left: -20px;
+        top: -20px;
+    }
+
+    .merchant-dots-img {
+        display: none;
+    }
+
+    .merchant-dots-img-2 {
+        display: none;
+    }
+
+    .merchant-account-side-img {
+        max-width: 100px;
+        top: 50px;
+    }
 }
 
 @media (max-width:991.98px) {
@@ -547,11 +598,41 @@ html {
         top: 480px;
         max-width: 80px;
     }
+
+    .finzeo-card {
+        min-height: 394px;
+        max-height: 394px;
+    }
+
+    .merchant-bg {
+        background-color: var(--blue);
+        min-height: 100%;
+    }
+
+    .merchant-account-side-img {
+        max-width: 80px;
+        top: 10px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .fin-card-img {
+        min-height: 110px;
+    }
+
+    .fin-card-img img {
+        max-width: 100px;
+    }
+
+    .finzeo-card {
+        min-height: 344px;
+        max-height: 344px;
+    }
 }
 
 @media (max-width:575.98px) {
     .common-btn {
-        padding: 8px 30.5px 10px 30.5px;
+        padding: 10px 30.5px 10px 30.5px;
     }
 
     .para {
@@ -568,13 +649,5 @@ html {
 
     .side-img02 {
         display: none;
-    }
-}
-
-@media (min-width:1400px) {
-    .container_modified {
-        /* max-width: 1140px !important; */
-        max-width: 1210px !important;
-        padding-left: 35px;
     }
 }
