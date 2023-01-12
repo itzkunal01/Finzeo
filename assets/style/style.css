@@ -756,6 +756,9 @@ html {
         max-width: unset;
     }
 
+    .side-img01 {
+        max-width: 50px;
+    }
 }
 
 @media (max-width:575.98px) {
@@ -794,5 +797,9 @@ html {
     .service-card {
         min-height: 450px;
         max-height: 450px;
+    }
+
+    .arrow02 {
+        display: none;
     }
 }
