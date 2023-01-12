@@ -10,7 +10,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/style/style.css" />
   <link rel="shortcut icon" href="./assets/img/svg/favicon.svg" type="image/x-icon">
-  <!-- ============================== SLICK LINKS =================================== -->
+  <!-- ============================== SLICK LINKS ================================ -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -40,20 +40,20 @@
   <title>Finzeo</title>
   <meta name="title" content="Finzeo">
   <meta name="description" content="We didn't Invent Payment Processing. We just made it better.">
-
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:title" content="Finzeo">
   <meta property="og:description" content="We didn't Invent Payment Processing. We just made it better.">
   <meta property="og:image" content="assets/img/png/meta-image-alemanzo.png">
-
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="">
   <meta property="twitter:title" content="Finzeo">
   <meta property="twitter:description" content="We didn't Invent Payment Processing. We just made it better.">
   <meta property="twitter:image" content="assets/img/png/meta-img.png">
+  <!-- =============================== AOS ================================= -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body onload="loader()" class="no-scroll-y no-scroll-x">
@@ -66,7 +66,7 @@
     <!------------ HERO ------------------------------->
     <div class="hero-section position-relative">
       <!----- NAVBAR STARTS --------------------------->
-      <div class="container container_modified">
+      <div class="container container_modified" data-aos="fade-right" data-aos-delay="1500">
         <nav class="navbar navbar-expand-lg navbar-light z-5">
           <a class="navbar-brand" href="#">
             <img class="nav-logo" src="./assets/img/svg/finzeo-logo.svg" alt="logo" />
@@ -103,7 +103,8 @@
       <!----- NAVBAR ENDS ----------------------------->
       <div class="container container_modified">
         <div class="row align-items-center justify-content-center justify-content-lg-between pt-xl-4 hero-content">
-          <div class="col-12 col-lg-6 col-xl-5 col-xxl-6 z-5 mb-4 mb-sm-5 mb-lg-0 pt-4 pt-sm-5 pt-xl-0">
+          <div class="col-12 col-lg-6 col-xl-5 col-xxl-6 z-5 mb-4 mb-sm-5 mb-lg-0 pt-4 pt-sm-5 pt-xl-0"
+            data-aos="fade-down" data-aos-delay="1500">
             <div class="pt-lg-5 mt-lg-5 mt-xl-0 pt-xl-0">
               <h1 class=" heading white mb-3 white">We didn't Invent Payment Processing. We just made it better.</h1>
               <p class="para light-blue mb-0 pe-xxl-5">Companies of all sizes use FinZeo financial software and APIs to
@@ -116,13 +117,14 @@
               <img class="arrow01 d-none d-xl-block" src="./assets/img/svg/arrow01_animated.svg" alt="arrow01_animated">
             </div>
           </div>
-          <div class="col-12 col-lg-6 col-xl-7 z-5 my-4 my-lg-0 d-xl-none">
+
+          <div class="col-12 col-lg-6 col-xl-7 z-5 my-4 my-lg-0 d-xl-none" data-aos="zoom-in" data-aos-delay="1500">
             <img class="w-100" src="./assets/img/png/hero-section-img.png" alt="hero-section-img">
           </div>
         </div>
         <img class="dots-img" src="./assets/img/png/dots-img.png" alt="dots-img">
       </div>
-      <div class="col-12 col-lg-6 col-xl-7 z-5 hero_img01">
+      <div class="col-12 col-lg-6 col-xl-7 z-5 hero_img01" data-aos="zoom-in" data-aos-delay="1500">
         <img class="w-100" src="./assets/img/png/hero-section-img.png" alt="hero-section-img">
       </div>
       <img class="w-100 position-absolute bottom-0 z-5 d-none d-xl-block" src="./assets/img/png/wave-img.png"
@@ -133,10 +135,10 @@
     <div class="position-relative">
       <div class="container container_modified py-5">
         <div class="row align-items-center justify-content-center justify-content-lg-between" id="buisness">
-          <div class="col-12 col-md-10 col-lg-5">
+          <div class="col-12 col-md-10 col-lg-5" data-aos="fade-right" data-aos-duration="800">
             <img class="w-100" src="./assets/img/png/grow.png" alt="grow">
           </div>
-          <div class="col-12 col-lg-6 my-5 my-lg-0">
+          <div class="col-12 col-lg-6 my-5 my-lg-0" data-aos="fade-left" data-aos-duration="800">
             <p class="font-xs sub-heading black mb-2 text-uppercase">All in one financial platform</p>
             <h2 class="heading black">The Platform to Help <span class="blue">Grow Your Business</span></h2>
             <p class="para gray pb-1">FinZeo’s financial platform is the technology built to grow
@@ -147,14 +149,14 @@
           </div>
         </div>
       </div>
-
       <img class="side-img01 position-absolute" src="./assets/img/png/side-img01.png" alt="side-img01">
     </div>
 
     <!------------ FINZEO CARDS SECTION ---------------->
     <div class="position-relative">
       <div class="container container_modified pb-5 py-sm-5">
-        <div class="row align-items-center justify-content-center text-center pt-xl-5 mt-xl-5" id="content">
+        <div class="row align-items-center justify-content-center text-center pt-xl-5 mt-xl-5" id="content"
+          data-aos="zoom-in-up" data-aos-duration="800">
           <div class="col-12 mb-xl-5 pb-xl-5">
             <h2 class="heading black">The <span class="blue">FinZeo</span> Platform</h2>
             <p class="para gray mb-4 pb-2 mb-sm-5">Connect your mobile, online and in store payments into one system.
@@ -168,7 +170,7 @@
         <!------------ FINZEO CARDS ------------>
         <div class="d-none d-lg-block">
           <div class="row justify-content-center text-center pb-5 mb-5">
-            <div class="col-12 col-lg-5 col-xl-3">
+            <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-lg-5 col-xl-3">
               <div class="finzeo-card px-3 py-4 cursor-pointer">
                 <div class="px-1 pt-4 pb-1">
                   <div class="fin-card-img d-flex align-items-center justify-content-center">
@@ -180,7 +182,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-5 col-xl-3">
+            <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" class="col-12 col-lg-5 col-xl-3">
               <div class="finzeo-card px-3 py-4 cursor-pointer">
                 <div class="px-1 pt-4 pb-1">
                   <div class="fin-card-img d-flex align-items-center justify-content-center">
@@ -191,7 +193,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-5 col-xl-3">
+            <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="110" class="col-12 col-lg-5 col-xl-3">
               <div class="finzeo-card px-3 py-4 cursor-pointer mt-4 pt-3 mt-xl-0 pt-xl-0">
                 <div class="px-1 pt-4 pb-1">
                   <div class="fin-card-img d-flex align-items-center justify-content-center">
@@ -202,7 +204,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-5 col-xl-3">
+            <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="120" class="col-12 col-lg-5 col-xl-3">
               <div class="finzeo-card px-3 py-4 cursor-pointer mt-4 pt-3 mt-xl-0 pt-xl-0">
                 <div class="px-1 pt-4 pb-1">
                   <div class="fin-card-img d-flex align-items-center justify-content-center">
@@ -216,7 +218,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-5 col-xl-3">
+            <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="130" class="col-12 col-lg-5 col-xl-3">
               <div class="finzeo-card px-3 py-4 cursor-pointer mt-5 mt-xl-4 pt-3">
                 <div class="px-1 pt-4 pb-1">
                   <div class="fin-card-img d-flex align-items-center justify-content-center">
@@ -230,7 +232,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-5 col-xl-3">
+            <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="140" class="col-12 col-lg-5 col-xl-3">
               <div class="finzeo-card px-3 py-4 cursor-pointer mt-5 mt-xl-4 pt-3">
                 <div class="px-1 pt-4 pb-1">
                   <div class="fin-card-img d-flex align-items-center justify-content-center">
@@ -242,7 +244,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-5 col-xl-3 mt-4 mt-xl-0">
+            <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="150"
+              class="col-12 col-lg-5 col-xl-3 mt-4 mt-xl-0">
               <div class="finzeo-card px-3 py-4 cursor-pointer mt-5 mt-xl-4 pt-xl-3">
                 <div class="px-1 pt-4 pb-1">
                   <div class="fin-card-img d-flex align-items-center justify-content-center">
@@ -352,7 +355,7 @@
       <img class="merchant-dots-img" src="./assets/img/png/dots-img.png" alt="dots-img">
       <div class="container container_modified py-5">
         <div class="row align-items-center justify-content-center py-lg-5 text-center" id="partners">
-          <div class="col-12 col-md-10 col-lg-8">
+          <div class="col-12 col-md-10 col-lg-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h2 class="heading white px-sm-4 mb-4 mb-lg-5">Get your New Low or High Risk Merchant Account Pre-approved
             </h2>
             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center position-relative">
@@ -370,16 +373,17 @@
 
     <!------------ OUR SERVICES SECTION ---------------->
     <div class="position-relative no-scroll-x">
+      <img class="servimg-01 position-absolute" src="./assets/img/png/side-img02.png" alt="side-img02">
       <div class="container container_modified py-5">
         <div class="row align-items-center justify-content-center text-center pt-xl-5 mt-xl-5" id="services">
-          <div class="col-12 mb-lg-5 pb-xl-5">
+          <div class="col-12 pb-2 pb-sm-3 mb-sm-4 mb-lg-5 pb-xl-4" data-aos="fade-right" data-aos-duration="800">
             <h2 class="heading black">Our <span class="blue">Services</span></h2>
           </div>
         </div>
         <!------------ OUR SERVICES CARDS ---------------->
         <div class="d-none d-lg-block">
           <div class="row justify-content-center text-center">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-sos-delay="100" data-aos-duration="800">
               <div class="service-card px-2 py-4 cursor-pointer">
                 <div class="px-3">
                   <div class="service-card-img d-flex align-items-center justify-content-center">
@@ -399,8 +403,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-sos-delay="110" data-aos-duration="800">
               <div class="service-card px-2 py-4 cursor-pointer">
                 <div class="px-3">
                   <div class="service-card-img d-flex align-items-center justify-content-center">
@@ -419,8 +422,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-sos-delay="120" data-aos-duration="800">
               <div class="service-card px-3 py-4 cursor-pointer">
                 <div class="px-3">
                   <div class="service-card-img d-flex align-items-center justify-content-center">
@@ -442,7 +444,7 @@
             </div>
           </div>
           <div class="row justify-content-center text-center pb-5 mb-5">
-            <div class="col-12 col-lg-4 mt-3 pt-1">
+            <div class="col-12 col-lg-4 mt-3 pt-1" data-aos="fade-up" data-sos-delay="130" data-aos-duration="800">
               <div class="service-card px-1 py-4 cursor-pointer">
                 <div class="px-3">
                   <div class="service-card-img d-flex align-items-center justify-content-center">
@@ -453,8 +455,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-12 col-lg-4 mt-3 pt-1">
+            <div class="col-12 col-lg-4 mt-3 pt-1" data-aos="fade-up" data-sos-delay="140" data-aos-duration="800">
               <div class="service-card px-1 py-4 cursor-pointer">
                 <div class="px-3">
                   <div class="service-card-img d-flex align-items-center justify-content-center">
@@ -566,11 +567,11 @@
         src="./assets/img/png/dots-services-section.png" alt="dots-services-section">
       <div class="container container_modified py-4 py-sm-5">
         <div class="row justify-content-between text-center mt-4 mb-sm-5 pb-sm-5 px-xl-3" id="blog">
-          <div class="col-12">
+          <div class="col-12" data-aos="fade-right" data-aos-duration="800">
             <h2 class="heading white px-sm-4 mb-4 mb-lg-5 pb-sm-5">Features</h2>
           </div>
 
-          <div class="col-12 col-sm-6 col-lg-4">
+          <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4">
             <div class="features-card p-3">
               <div class="p-3">
                 <div class="features-card-img">
@@ -580,7 +581,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 mt-sm-0">
+          <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4 mt-4 mt-sm-0">
             <div class="features-card p-3">
               <div class="p-3">
                 <div class="features-card-img">
@@ -590,7 +591,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3 mt-lg-0 pt-lg-0">
+          <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3 mt-lg-0 pt-lg-0">
             <div class="features-card p-3">
               <div class="p-3">
                 <div class="features-card-img">
@@ -601,7 +602,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3">
+          <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3">
             <div class="features-card p-3">
               <div class="p-3">
                 <div class="features-card-img">
@@ -611,7 +612,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3">
+          <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3">
             <div class="features-card py-3">
               <div class="py-3">
                 <div class="features-card-img">
@@ -622,7 +623,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3">
+          <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3">
             <div class="features-card p-3">
               <div class="p-3">
                 <div class="features-card-img">
@@ -640,14 +641,15 @@
 
     <!------------ GET STARTED SECTION -------------------->
     <div class="position-relative no-scroll-x">
+      <img class="started-side-img01 position-absolute" src="./assets/img/png/side-img02.png" alt="side-img02">
       <div class="container container_modified py-5">
         <div class="row align-items-center justify-content-center text-center pt-xl-5 mt-xl-5">
-          <div class="col-12">
+          <div class="col-12" data-aos="zoom-in" data-aos-duration="800">
             <img class="w-100" src="./assets/img/png/get-started-img.png" alt="get-started-img">
           </div>
 
           <div class="col-10 col-md-8 started-content mb-5 mb-md-0" id="content">
-            <div class="py-4 py-lg-5 text-center started-card mx-auto">
+            <div class="py-4 py-lg-5 text-center started-card mx-auto" data-aos="flip-left" data-aos-duration="800">
               <h2 class="heading black pb-1">Let’s Get you <span class="blue">Started</span></h2>
               <p class="para gray pb-sm-3 mb-sm-3">Create Your Free Account with Finzeo</p>
               <button class="blue-btn text-capitalize me-1">Join us Today</button>
@@ -655,7 +657,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-7" id="developers">
+          <div class="col-12 col-lg-7" id="developers" data-aos="fade-right" data-aos-duration="800">
             <h6 class="sub-heading font-xs custom-letter-spacing">API HEAVEN</h6>
             <h2 class="heading black pb-1">Built by <span class="blue">Developers</span> for <span
                 class="blue">Developers</span></h2>
@@ -673,14 +675,15 @@
           </div>
         </div>
       </div>
+      <img class="started-side-img02 position-absolute" src="./assets/img/png/side-img01.png" alt="side-img01">
     </div>
 
     <!------------ FOOTER SECTION -------------------->
     <div class="footer-section position-relative no-scroll-x">
       <img class="position-absolute footer-dots" src="./assets/img/png/dots-img.png" alt="dots-img">
-      <div class="container custom-container pt-5 pb-5 pb-xl-3">
+      <div class="container custom-container pt-5 pb-sm-4 pb-lg-5 pb-xl-3">
         <div class="row justify-content-between align-items-center align-items-lg-start">
-          <div class="col-12 col-lg-4 col-xl-5 col-lg-3">
+          <div class="col-12 col-lg-4 col-xl-5">
             <a href="#"
               class="d-flex align-items-center justify-content-center justify-content-lg-start mb-3 pb-md-1 text-decoration-none">
               <img src="./assets/img/svg/finzeo-logo.svg" alt="finzeo-logo" />
@@ -725,29 +728,29 @@
           <div class="col-12 col-lg-8 col-xl-7 mt-5 mt-lg-0">
             <div class="row justify-content-center justify-content-sm-start">
               <div class="col-6 col-sm-4 order-0 order-lg-0 text-center text-sm-start">
-                <h6 class="font-md fw_bold ff-gilroy-bold white mb-4 pb-1 text-uppercase">Services</h6>
+                <h6 class="font-md fw_bold ff-gilroy-bold white mb-3 mb-sm-4 pb-1 text-uppercase">Services</h6>
                 <ul class="list-unstyled footer-links">
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       ACH Payments</a>
                   </li>
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       buy now, pay later</a>
                   </li>
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       credit & debit card processing</a>
                   </li>
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       e-check processing</a>
                   </li>
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       mobile instant funding</a>
                   </li>
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       instant banking verification</a>
                   </li>
@@ -755,13 +758,13 @@
               </div>
 
               <div class="col-6 col-sm-4 order-2 order-lg-1 ps-lg-5 text-center text-sm-start mt-4 mt-sm-0">
-                <h6 class="font-md fw_bold ff-gilroy-bold white mb-4 pb-1 text-uppercase">resources</h6>
+                <h6 class="font-md fw_bold ff-gilroy-bold white mb-3 mb-sm-4 pb-1 text-uppercase">resources</h6>
                 <ul class="list-unstyled footer-links">
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       blog</a>
                   </li>
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       FAQ</a>
                   </li>
@@ -769,17 +772,17 @@
               </div>
 
               <div class="col-6 col-sm-4 order-1 order-lg-2 ps-md-4 text-center text-sm-start">
-                <h6 class="font-md fw_bold ff-gilroy-bold white mb-4 pb-1 text-uppercase">company</h6>
+                <h6 class="font-md fw_bold ff-gilroy-bold white mb-3 mb-sm-4 pb-1 text-uppercase">company</h6>
                 <ul class="list-unstyled footer-links">
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       Company</a>
                   </li>
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       About Us</a>
                   </li>
-                  <li class="mb-3 pb-1">
+                  <li class="mb-2 mb-sm-3 pb-1">
                     <a class="sub-heading white text-decoration-none text-capitalize font-xs" href="#home">
                       Contact</a>
                   </li>
@@ -801,7 +804,6 @@
         </div>
       </div>
     </div>
-
   </section>
 
   <a href=" #header" id="scroll" style="display: none"><span></span></a>
@@ -824,9 +826,9 @@
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
-      // autoplay: true,
+      autoplay: true,
       arrows: true,
-      // autoplaySpeed: 2000,
+      autoplaySpeed: 2000,
       infinite: true,
       responsive: [{
           breakpoint: 1024,
@@ -907,6 +909,11 @@
     const d = new Date();
     let year = d.getFullYear();
     document.getElementById("current-year").innerHTML = year;
+  </script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
   <!-- <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_2z4qmxlj.json" background="transparent" speed="1"
     style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->

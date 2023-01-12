@@ -600,7 +600,7 @@ html {
     display: none;
     border-radius: 50%;
     background-color: var(--black);
-    border: 1.6px solid var(--yellow);
+    border: 1.6px solid var(--gray);
     -webkit-animation: up-down 2.5s ease-in-out infinite;
     animation: up-down 2.5s ease-in-out infinite;
     z-index: 10;
@@ -649,7 +649,7 @@ html {
     position: fixed;
     width: 100%;
     min-height: 100vh;
-    background: var(--black);
+    background: var(--blue);
     z-index: 100;
     overflow-x: hidden !important;
     z-index: 22;
@@ -719,6 +719,18 @@ html {
     }
 }
 
+.servimg-01 {
+    top: 250px;
+}
+
+.started-side-img01 {
+    top: 220px;
+}
+
+.started-side-img02 {
+    right: 0;
+    bottom: 80px;
+}
 
 @media (min-width:1400px) {
     .container_modified {
@@ -786,6 +798,10 @@ html {
     .merchant-dots-img {
         margin-top: -80px;
     }
+
+    .servimg-01 {
+        max-width: 70px;
+    }
 }
 
 @media (max-width:1199.98px) {
@@ -848,6 +864,19 @@ html {
     .footer-dots {
         display: none;
     }
+
+    .servimg-01 {
+        display: none;
+    }
+
+    .started-side-img01 {
+        max-width: 80px;
+        top: 120px;
+    }
+
+    .started-side-img02 {
+        display: none;
+    }
 }
 
 @media (max-width:991.98px) {
@@ -898,6 +927,10 @@ html {
         -webkit-transform: translateY(-80px);
         -ms-transform: translateY(-80px);
         transform: translateY(-80px);
+    }
+
+    .started-side-img01 {
+        display: none;
     }
 }
 
