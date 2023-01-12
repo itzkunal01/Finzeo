@@ -105,6 +105,10 @@ html {
     color: var(--gray) !important;
 }
 
+.bg-black {
+    background-color: var(--black) !important;
+}
+
 /* ============================= FONT SIZES ============================= */
 .font-xs {
     font-size: var(--font-xs) !important;
@@ -467,6 +471,20 @@ html {
 .service-card-img {
     min-height: 116px;
 }
+
+/* ========================= FEATURES SECTION CSS ============ */
+.features-card {
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    height: 100%;
+    max-width: 280px;
+    margin: auto;
+}
+
+.features-card-img {
+    min-height: 125px;
+}
+
 
 @media (min-width:1400px) {
     .container_modified {
