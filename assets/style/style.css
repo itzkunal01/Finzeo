@@ -506,6 +506,23 @@ html {
     right: 0;
 }
 
+/* ========================= GET STARTED SECTION CSS ============ */
+.started-card {
+    box-shadow: 0px -6px 6px 0px #1344CB26;
+    box-shadow: 0px 4px 6px 0px #0065EF26;
+    border-radius: 16px;
+    background-color: var(--white);
+    max-width: 544px;
+}
+
+.started-content {
+    transform: translateY(-150px);
+}
+
+.custom-letter-spacing {
+    letter-spacing: .26em;
+}
+
 @media (min-width:1400px) {
     .container_modified {
         max-width: 1210px !important;
