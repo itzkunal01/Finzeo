@@ -388,6 +388,31 @@ html {
     line-height: 18.56px;
 }
 
+/* ================================== SLIDER CSS ================================ */
+
+.finzeo-slider .slick-dots li {
+    width: 15px;
+    height: 15px;
+}
+
+.finzeo-slider .slick-dots li.slick-active button:before {
+    color: var(--blue);
+    opacity: .9;
+}
+
+.finzeo-slider .slick-dots li button:before {
+    font-size: 14px;
+    color: var(--blue);
+}
+
+/* ================================== SLIDER CSS ================================ */
+.side-img02 {
+    top: 650px;
+    left: 0;
+}
+
+/* ========================= FiINZEO SECTION ===================== */
+
 @media (max-width:1599.98px) {
     .hero-section {
         padding-bottom: 236px;
@@ -480,6 +505,15 @@ html {
     .arrow02 {
         max-width: 90px;
     }
+
+    .finzeo-card:hover {
+        transform: translateY(0px);
+    }
+
+    .side-img02 {
+        top: 480px;
+        max-width: 80px;
+    }
 }
 
 @media (max-width:575.98px) {
@@ -497,6 +531,10 @@ html {
 
     .arrow02 {
         max-width: 80px;
+    }
+
+    .side-img02 {
+        display: none;
     }
 }
 
