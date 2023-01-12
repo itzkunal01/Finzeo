@@ -388,7 +388,7 @@ html {
     line-height: 18.56px;
 }
 
-/* ================================== SLIDER CSS ================================ */
+/* ========================== SLIDER CSS ========================== */
 
 .finzeo-slider .slick-dots li {
     width: 15px;
@@ -405,13 +405,46 @@ html {
     color: var(--blue);
 }
 
-/* ================================== SLIDER CSS ================================ */
+/* ========================== SLIDER CSS ========================== */
 .side-img02 {
     top: 650px;
     left: 0;
 }
 
 /* ========================= FiINZEO SECTION ===================== */
+/* ========================= MERCHANT ACCOUNT SECTION ============ */
+.merchant-bg {
+    background-image: url("../img/png/merchant-account-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 352px;
+}
+
+.arrow03 {
+    position: absolute;
+    left: 40px;
+    top: -20px;
+    min-width: 110px;
+    transform: rotate(14deg);
+}
+
+.merchant-dots-img {
+    position: absolute;
+    right: 0;
+    margin-top: -100px;
+}
+
+.merchant-dots-img-2 {
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+}
+
+.merchant-account-side-img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
 
 @media (max-width:1599.98px) {
     .hero-section {
