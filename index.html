@@ -651,7 +651,7 @@
           <div class="col-10 col-md-8 started-content mb-5 mb-md-0" id="content">
             <div class="py-4 py-lg-5 text-center started-card mx-auto" data-aos="flip-left" data-aos-duration="800">
               <h2 class="heading black pb-1">Let’s Get you <span class="blue">Started</span></h2>
-              <p class="para gray pb-sm-3 mb-sm-3">Create Your Free Account with Finzeo</p>
+              <p class="para gray pb-2 pb-sm-3">Create Your Free Account with Finzeo</p>
               <button class="blue-btn text-capitalize me-1">Join us Today</button>
               <img class="arrow02" src="./assets/img/svg/arrow02_animated.svg" alt="arrow02_animated">
             </div>
@@ -662,15 +662,17 @@
             <h2 class="heading black pb-1">Built by <span class="blue">Developers</span> for <span
                 class="blue">Developers</span></h2>
             <h6 class="sub-heading font-xs pb-1">Powerful and easy to use API's</h6>
-            <p class="para gray mb-sm-4">We know the only thing worse than no APIi s a poorly written API. Our API's
-              <br>
+            <p class="para gray mb-sm-4 px-2 px-sm-0">We know the only thing worse than no APIi s a poorly written API.
+              Our
+              API's
+              <br class="d-none d-sm-block">
               are built to get you up and processing as quickly as possible. You can even
-              <br>
+              <br class="d-none d-sm-block">
               test your code in the FinZeo sandbox Before you go live.
             </p>
-            <div class="d-flex align-items-center justify-content-center">
-              <p class="para blue">Tools For Your Integration</p>
-              <p class="para blue ms-4">Prebuilt Integrations</p>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+              <p class="para blue mb-1 mb-sm-3">Tools For Your Integration</p>
+              <p class="para blue ms-sm-4">Prebuilt Integrations</p>
             </div>
           </div>
         </div>
@@ -913,7 +915,9 @@
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true
+    });
   </script>
   <!-- <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_2z4qmxlj.json" background="transparent" speed="1"
     style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->
