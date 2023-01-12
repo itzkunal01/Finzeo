@@ -5,6 +5,7 @@ html {
     color: var(--black);
     background-color: var(--white);
     padding: 0px;
+    overflow-x: hidden;
 }
 
 .no-scroll-y {
@@ -508,11 +509,11 @@ html {
 
 /* ========================= GET STARTED SECTION CSS ============ */
 .started-card {
+    max-width: 544px;
     box-shadow: 0px -6px 6px 0px #1344CB26;
     box-shadow: 0px 4px 6px 0px #0065EF26;
     border-radius: 16px;
     background-color: var(--white);
-    max-width: 544px;
 }
 
 .started-content {
@@ -521,6 +522,41 @@ html {
 
 .custom-letter-spacing {
     letter-spacing: .26em;
+}
+
+/* ========================= FOOTER SECTION CSS ============ */
+.footer-section {
+    background-image: url("../img/png/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 500px;
+    padding-top: 180px;
+}
+
+.social-icon svg {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.social-icon:hover svg {
+    transform: scale(1.1234);
+}
+
+.footer-links li a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-links li a:hover {
+    color: var(--gray) !important;
+}
+
+.footer-dots {
+    left: -10px;
+    top: 40px;
 }
 
 @media (min-width:1400px) {
@@ -638,6 +674,17 @@ html {
     .dots-services-img2 {
         max-width: 100px;
     }
+
+    .footer-section {
+        background-image: none;
+        background-color: var(--blue);
+        padding-top: 24px;
+        min-height: 100%;
+    }
+
+    .footer-dots {
+        display: none;
+    }
 }
 
 @media (max-width:991.98px) {
@@ -678,8 +725,12 @@ html {
     }
 
     .service-card {
-        min-height: 450px;
-        max-height: 450px;
+        min-height: 490px;
+        max-height: 490px;
+    }
+
+    .started-content {
+        transform: translateY(-80px);
     }
 }
 
@@ -696,6 +747,15 @@ html {
         min-height: 314px;
         max-height: 314px;
     }
+
+    .started-content {
+        transform: translateY(-20px);
+    }
+
+    .started-card {
+        max-width: unset;
+    }
+
 }
 
 @media (max-width:575.98px) {
@@ -717,5 +777,22 @@ html {
 
     .side-img02 {
         display: none;
+    }
+
+    .started-content {
+        transform: translateY(0px);
+    }
+
+    .started-card {
+        box-shadow: unset;
+    }
+
+    .footer-section {
+        padding-top: 0px;
+    }
+
+    .service-card {
+        min-height: 450px;
+        max-height: 450px;
     }
 }
