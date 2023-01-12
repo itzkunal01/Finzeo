@@ -193,6 +193,7 @@ html {
 .common-btn:focus,
 .common-btn:hover {
     color: var(--blue) !important;
+    -webkit-box-shadow: inset 0 0 0 2em var(--white);
     box-shadow: inset 0 0 0 2em var(--white);
     box-shadow: inset 0 0 0 2em var(--white);
     border: 2px solid var(--blue);
@@ -217,6 +218,7 @@ html {
 .blue-btn:focus,
 .blue-btn:hover {
     color: var(--white) !important;
+    -webkit-box-shadow: inset 0 0 0 2em var(--blue);
     box-shadow: inset 0 0 0 2em var(--blue);
     box-shadow: inset 0 0 0 2em var(--blue);
     border: 2px solid var(--blue);
@@ -248,12 +250,18 @@ html {
     left: 0;
     background-color: var(--white);
     visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .nav-link:hover:before {
     visibility: visible;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 
@@ -318,6 +326,7 @@ html {
 /* ========================= HERO SECTION ===================== */
 .hero-section {
     min-height: 100vh;
+    background: -o-linear-gradient(196.13deg, #103393 25.13%, var(--blue) 89.37%);
     background: linear-gradient(253.87deg, #103393 25.13%, var(--blue) 89.37%);
 }
 
@@ -343,6 +352,8 @@ html {
 }
 
 .arrow01 {
+    -webkit-transform: translate(-85px, -30px);
+    -ms-transform: translate(-85px, -30px);
     transform: translate(-85px, -30px);
 }
 
@@ -355,6 +366,8 @@ html {
 
 /* ========================= GROW SECTION ===================== */
 .arrow02 {
+    -webkit-transform: translate(15px, 0px);
+    -ms-transform: translate(15px, 0px);
     transform: translate(15px, 0px);
 }
 
@@ -365,6 +378,7 @@ html {
 
 /* ========================= FiINZEO SECTION ===================== */
 .finzeo-card {
+    -webkit-box-shadow: 0px 4px 24px 0px #00000012;
     box-shadow: 0px 4px 24px 0px #00000012;
     border-radius: 10px;
     height: 100%;
@@ -374,7 +388,10 @@ html {
 }
 
 .finzeo-card:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
     transform: translateY(-10px);
+    background: -o-linear-gradient(274.57deg, #012CA6 3.7%, rgba(29, 78, 216, 0.91) 47.37%, #0330AF 97.56%);
     background: linear-gradient(175.43deg, #012CA6 3.7%, rgba(29, 78, 216, 0.91) 47.37%, #0330AF 97.56%);
 }
 
@@ -435,6 +452,8 @@ html {
     left: 40px;
     top: -20px;
     min-width: 110px;
+    -webkit-transform: rotate(14deg);
+    -ms-transform: rotate(14deg);
     transform: rotate(14deg);
 }
 
@@ -467,6 +486,8 @@ html {
 }
 
 .service-card:hover {
+    -webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
     transform: translateY(-8px);
 }
 
@@ -488,6 +509,8 @@ html {
 }
 
 .features-card:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
     transform: scale(1.02);
 }
 
@@ -510,13 +533,17 @@ html {
 /* ========================= GET STARTED SECTION CSS ============ */
 .started-card {
     max-width: 544px;
+    -webkit-box-shadow: 0px -6px 6px 0px #1344CB26;
     box-shadow: 0px -6px 6px 0px #1344CB26;
+    -webkit-box-shadow: 0px 4px 6px 0px #0065EF26;
     box-shadow: 0px 4px 6px 0px #0065EF26;
     border-radius: 16px;
     background-color: var(--white);
 }
 
 .started-content {
+    -webkit-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
     transform: translateY(-150px);
 }
 
@@ -541,6 +568,8 @@ html {
 }
 
 .social-icon:hover svg {
+    -webkit-transform: scale(1.1234);
+    -ms-transform: scale(1.1234);
     transform: scale(1.1234);
 }
 
@@ -558,6 +587,138 @@ html {
     left: -10px;
     top: 40px;
 }
+
+/* ============================ BACK TO TOP ============================ */
+#scroll {
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: none;
+    border-radius: 50%;
+    background-color: var(--black);
+    border: 1.6px solid var(--yellow);
+    -webkit-animation: up-down 2.5s ease-in-out infinite;
+    animation: up-down 2.5s ease-in-out infinite;
+    z-index: 10;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+@-webkit-keyframes up-down {
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down {
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+/* ============================ PRELOADER ============================ */
+#scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: var(--white);
+}
+
+#scroll:hover {
+    -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.547);
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.547);
+}
+
+#scroll:hover::after {
+    height: 100%;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--black);
+    z-index: 100;
+    overflow-x: hidden !important;
+    z-index: 22;
+}
+
+.loading-img {
+    min-height: 100vh;
+}
+
+#loading img {
+    max-width: 180px;
+    -webkit-animation: loader-animation 2s ease infinite;
+    animation: loader-animation 2s ease infinite;
+}
+
+.transition-03sEase {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@-webkit-keyframes loader-animation {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.3);
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes loader-animation {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.3);
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
 
 @media (min-width:1400px) {
     .container_modified {
@@ -603,6 +764,8 @@ html {
     }
 
     .arrow01 {
+        -webkit-transform: translate(-76px, -30px);
+        -ms-transform: translate(-76px, -30px);
         transform: translate(-76px, -30px);
         max-width: 60px;
     }
@@ -701,6 +864,8 @@ html {
     }
 
     .finzeo-card:hover {
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
         transform: translateY(0px);
     }
 
@@ -730,6 +895,8 @@ html {
     }
 
     .started-content {
+        -webkit-transform: translateY(-80px);
+        -ms-transform: translateY(-80px);
         transform: translateY(-80px);
     }
 }
@@ -749,6 +916,8 @@ html {
     }
 
     .started-content {
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
         transform: translateY(-20px);
     }
 
@@ -758,6 +927,10 @@ html {
 
     .side-img01 {
         max-width: 50px;
+    }
+
+    #loading img {
+        max-width: 120px;
     }
 }
 
@@ -783,10 +956,13 @@ html {
     }
 
     .started-content {
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
         transform: translateY(0px);
     }
 
     .started-card {
+        -webkit-box-shadow: unset;
         box-shadow: unset;
     }
 

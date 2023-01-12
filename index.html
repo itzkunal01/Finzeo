@@ -17,12 +17,52 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- ============================== SLICK LINKS =================================== -->
+  <!-- =============================== FAVICONS ================================= -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/png/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/png/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/png/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/png/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/png/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/png/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/png/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/png/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/png/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/png/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/png/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/png/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/png/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/png/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- =============================== META TAGS ================================= -->
+  <!-- Primary Meta Tags -->
   <title>Finzeo</title>
+  <meta name="title" content="Finzeo">
+  <meta name="description" content="We didn't Invent Payment Processing. We just made it better.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Finzeo">
+  <meta property="og:description" content="We didn't Invent Payment Processing. We just made it better.">
+  <meta property="og:image" content="assets/img/png/meta-image-alemanzo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="">
+  <meta property="twitter:title" content="Finzeo">
+  <meta property="twitter:description" content="We didn't Invent Payment Processing. We just made it better.">
+  <meta property="twitter:image" content="assets/img/png/meta-img.png">
 </head>
 
-<body>
+<body onload="loader()" class="no-scroll-y no-scroll-x">
   <section>
+    <div id="loading">
+      <div class="d-flex align-items-center justify-content-center loading-img">
+        <img src="./assets/img/svg/preloader.svg" alt="preloader">
+      </div>
+    </div>
     <!------------ HERO ------------------------------->
     <div class="hero-section position-relative">
       <!----- NAVBAR STARTS --------------------------->
@@ -646,7 +686,7 @@
               <img src="./assets/img/svg/finzeo-logo.svg" alt="finzeo-logo" />
             </a>
             <p class="font-xs sub-heading white text-center text-lg-start mb-0 pb-3 d-none d-lg-block">
-              (c) 2022 Finzeo. <br>
+              (c) <span id="current-year"></span> Finzeo. <br>
               All Rights Reserved
             </p>
             <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
@@ -763,11 +803,12 @@
     </div>
 
   </section>
+
+  <a href=" #header" id="scroll" style="display: none"><span></span></a>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
   <!-- ===================================== SLICK LINKS =========================== -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
@@ -829,7 +870,44 @@
       ]
     });
   </script>
-
+  <!-- BACK TO TOP  -->
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $("#scroll").fadeIn();
+        } else {
+          $("#scroll").fadeOut();
+        }
+      });
+      $("#scroll").click(function () {
+        $("html, body").animate({
+            scrollTop: 0,
+          },
+          40
+        );
+        return false;
+      });
+    });
+  </script>
+  <!-- PRELOADER  -->
+  <script>
+    var preloader = document.getElementById("loading");
+    var body = document.querySelector("body")
+    var html = document.querySelector("html")
+    setTimeout(function loader() {
+      preloader.style.display = "none";
+      body.classList.remove('no-scroll-y');
+      body.classList.add('no-scroll-x');
+      html.classList.add('no-scroll-x');
+    }, 1500);
+  </script>
+  <!-- YEAR -->
+  <script>
+    const d = new Date();
+    let year = d.getFullYear();
+    document.getElementById("current-year").innerHTML = year;
+  </script>
   <!-- <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_2z4qmxlj.json" background="transparent" speed="1"
     style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->
 </body>
