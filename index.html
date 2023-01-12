@@ -58,9 +58,16 @@
 
 <body onload="loader()" class="no-scroll-y no-scroll-x">
   <section>
-    <div id="loading">
+    <div class="line-of-dots" id="loading">
       <div class="d-flex align-items-center justify-content-center loading-img">
-        <img src="./assets/img/svg/preloader.svg" alt="preloader">
+        <!-- <img src="./assets/img/svg/preloader.svg" alt="preloader"> -->
+        <div class="follow-the-leader">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
     <!------------ HERO ------------------------------->
@@ -149,7 +156,8 @@
           </div>
         </div>
       </div>
-      <img class="side-img01 position-absolute" src="./assets/img/png/side-img01.png" alt="side-img01">
+      <!-- <img class="side-img01 position-absolute" src="./assets/img/png/side-img01.png" alt="side-img01"> -->
+      <img class="side-img01 position-absolute" src="./assets/img/svg/side-img01.svg" alt="side-img01">
     </div>
 
     <!------------ FINZEO CARDS SECTION ---------------->
@@ -166,7 +174,7 @@
               tool(s) as you need them, everything you need is in the FinZeo platform. </p>
           </div>
         </div>
-        <img class="side-img02 position-absolute" src="./assets/img/png/side-img02.png" alt="side-img02">
+        <img class="side-img02 position-absolute" src="./assets/img/svg/side-img02.svg" alt="side-img02">
         <!------------ FINZEO CARDS ------------>
         <div class="d-none d-lg-block">
           <div class="row justify-content-center text-center pb-5 mb-5">
@@ -367,13 +375,13 @@
         </div>
       </div>
       <img class="merchant-dots-img-2" src="./assets/img/png/dots-img.png" alt="dots-img">
-      <img class="merchant-account-side-img d-none d-sm-block" src="./assets/img/png/merchant-account-side-img.png"
+      <img class="merchant-account-side-img d-none d-sm-block" src="./assets/img/svg/merchant-account-side-img.svg"
         alt="merchant-account-side-img">
     </div>
 
     <!------------ OUR SERVICES SECTION ---------------->
     <div class="position-relative no-scroll-x">
-      <img class="servimg-01 position-absolute" src="./assets/img/png/side-img02.png" alt="side-img02">
+      <img class="servimg-01 position-absolute" src="./assets/img/svg/side-img02.svg" alt="side-img02">
       <div class="container container_modified py-5">
         <div class="row align-items-center justify-content-center text-center pt-xl-5 mt-xl-5" id="services">
           <div class="col-12 pb-2 pb-sm-3 mb-sm-4 mb-lg-5 pb-xl-4" data-aos="fade-right" data-aos-duration="800">
@@ -641,7 +649,7 @@
 
     <!------------ GET STARTED SECTION -------------------->
     <div class="position-relative no-scroll-x">
-      <img class="started-side-img01 position-absolute" src="./assets/img/png/side-img02.png" alt="side-img02">
+      <img class="started-side-img01 position-absolute" src="./assets/img/svg/side-img02.svg" alt="side-img02">
       <div class="container container_modified py-5">
         <div class="row align-items-center justify-content-center text-center pt-xl-5 mt-xl-5">
           <div class="col-12" data-aos="zoom-in" data-aos-duration="800">
@@ -670,14 +678,15 @@
               <br class="d-none d-sm-block">
               test your code in the FinZeo sandbox Before you go live.
             </p>
-            <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">
               <p class="para blue mb-1 mb-sm-3">Tools For Your Integration</p>
               <p class="para blue ms-sm-4">Prebuilt Integrations</p>
             </div>
           </div>
         </div>
       </div>
-      <img class="started-side-img02 position-absolute" src="./assets/img/png/side-img01.png" alt="side-img01">
+      <!-- <img class="started-side-img02 position-absolute" src="./assets/img/png/side-img01.png" alt="side-img01"> -->
+      <img class="started-side-img02 position-absolute" src="./assets/img/svg/side-img01.svg" alt="side-img01">
     </div>
 
     <!------------ FOOTER SECTION -------------------->
@@ -799,7 +808,7 @@
 
           <div class="col-12 mt-2 mt-lg-0 d-lg-none">
             <p class="font-xs sub-heading white text-center text-lg-start mb-0 pb-3">
-              (c) 2022 Finzeo. <br>
+              (c) <span id="current-year-now"></span> Finzeo. <br>
               All Rights Reserved
             </p>
           </div>
@@ -911,6 +920,7 @@
     const d = new Date();
     let year = d.getFullYear();
     document.getElementById("current-year").innerHTML = year;
+    document.getElementById("current-year-now").innerHTML = year;
   </script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
