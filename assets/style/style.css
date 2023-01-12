@@ -80,6 +80,7 @@ html {
 
 @media (max-width:575.98px) {
     :root {
+        --font-md: 20px;
         --font-lg: 24px;
     }
 }
@@ -479,12 +480,31 @@ html {
     height: 100%;
     max-width: 280px;
     margin: auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.features-card:hover {
+    transform: scale(1.02);
 }
 
 .features-card-img {
     min-height: 125px;
 }
 
+.dots-services-img1 {
+    max-width: 120px;
+    top: 0;
+    left: 0;
+}
+
+.dots-services-img2 {
+    max-width: 120px;
+    bottom: 0;
+    right: 0;
+}
 
 @media (min-width:1400px) {
     .container_modified {
@@ -592,6 +612,14 @@ html {
     .merchant-account-side-img {
         max-width: 100px;
         top: 50px;
+    }
+
+    .dots-services-img1 {
+        max-width: 100px;
+    }
+
+    .dots-services-img2 {
+        max-width: 100px;
     }
 }
 
