@@ -613,6 +613,11 @@ html {
         max-width: 80px;
         top: 10px;
     }
+
+    .service-card {
+        min-height: 450px;
+        max-height: 450px;
+    }
 }
 
 @media (max-width:767.98px) {
