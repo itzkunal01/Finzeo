@@ -6,7 +6,6 @@ html {
     background-color: var(--white);
     padding: 0px;
     overflow-x: hidden;
-    font-display: swap;
 }
 
 .no-scroll-y {
