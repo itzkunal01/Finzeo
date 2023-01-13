@@ -542,6 +542,10 @@ html {
     justify-content: center;
 }
 
+.features-card-img img {
+    max-width: 96px;
+}
+
 .dots-services-img1 {
     max-width: 120px;
     top: 0;
