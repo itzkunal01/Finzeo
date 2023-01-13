@@ -86,6 +86,13 @@ html {
     }
 }
 
+@media (min-width:1600px) {
+    :root {
+        --font-xs: 17px;
+        --font-lg: 46px;
+    }
+}
+
 /* ============================= COLORS ============================= */
 .white {
     color: var(--white) !important;
@@ -747,7 +754,7 @@ html {
     .hero_img01 {
         top: 70px;
         padding-right: 37px;
-        max-width: 741px;
+        max-width: 721px;
     }
 
     .hero-content {
