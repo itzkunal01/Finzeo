@@ -81,7 +81,7 @@ html {
 
 @media (max-width:575.98px) {
     :root {
-        --font-md: 20px;
+        --font-md: 17px;
         --font-lg: 24px;
     }
 }
@@ -533,6 +533,9 @@ html {
 
 .features-card-img {
     min-height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dots-services-img1 {
@@ -993,8 +996,8 @@ html {
     }
 
     .features-card {
-        min-height: 250px;
-        max-height: 250px;
+        min-height: 220px;
+        max-height: 220px;
     }
 }
 
@@ -1046,6 +1049,14 @@ html {
     #scroll {
         width: 42px;
         height: 42px;
+    }
+
+    .features-card-img {
+        min-height: 100px;
+    }
+
+    .features-card-img img {
+        max-width: 66px;
     }
 }
 
