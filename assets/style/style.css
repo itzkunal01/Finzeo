@@ -422,6 +422,10 @@ html {
     min-height: 148px;
 }
 
+.fin-card-img img {
+    max-width: 130px;
+}
+
 .finzeo-card p {
     line-height: 18.56px;
 }
