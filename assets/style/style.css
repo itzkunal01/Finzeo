@@ -6,6 +6,7 @@ html {
     background-color: var(--white);
     padding: 0px;
     overflow-x: hidden;
+    font-display: swap;
 }
 
 .no-scroll-y {
@@ -19,21 +20,25 @@ html {
 @font-face {
     font-family: Gilroy-Light;
     src: url("../fonts/Gilroy-Light.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: Gilroy-SemiBold;
     src: url("../fonts/Gilroy-SemiBold.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: Gilroy-Bold;
     src: url("../fonts/Gilroy-Bold.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: Gilroy-ExtraBold;
     src: url("../fonts/Gilroy-ExtraBold.ttf");
+    font-display: swap;
 }
 
 .ff-gilroy-light {
