@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="shortcut icon" href="./assets/img/svg/favicon.svg" type="image/x-icon">
+    <!-- ============================== SLICK LINKS ================================ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =============================== FAVICONS ================================= -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/png/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/png/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/png/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/png/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/png/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/png/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/png/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/png/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/png/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/png/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/png/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/png/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/png/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/png/manifest.json">
+    <!-- =============================== META TAGS ================================= -->
+    <!-- Primary Meta Tags -->
+    <title>Finzeo gsap-added</title>
+    <meta name="title" content="Finzeo">
+    <meta name="description" content="We didn't Invent Payment Processing. We just made it better.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finzeo-suite.netlify.app/">
+    <meta property="og:title" content="Finzeo">
+    <meta property="og:description" content="We didn't Invent Payment Processing. We just made it better.">
+    <meta property="og:image" content="https://finzeo-suite.netlify.app/assets/img/png/meta-image-alemanzo.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://finzeo-suite.netlify.app/">
+    <meta property="twitter:title" content="Finzeo">
+    <meta property="twitter:description" content="We didn't Invent Payment Processing. We just made it better.">
+    <meta property="twitter:image" content="https://finzeo-suite.netlify.app/assets/img/png/meta-img.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- =============================== AOS ================================= -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body onload="loader()" class="no-scroll-y no-scroll-x">
+    <section class="finzo-parent">
+        <div class="line-of-dots" id="loading">
+            <div class="d-flex align-items-center justify-content-center loading-img">
+                <div class="follow-the-leader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <!------------ HERO --------------------------------->
+        <div class="hero-section position-relative">
+            <!----- NAVBAR STARTS --------------------------->
+            <div class="container container_modified    content01">
+                <nav class="navbar navbar-expand-lg navbar-light z-5">
+                    <a class="navbar-brand" href="#">
+                        <img class="nav-logo" src="./assets/img/svg/finzeo-logo.svg" alt="logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end align-items-lg-center" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center ps-2 ps-lg-0 text-start">
+                            <li class="nav-item px-3">
+                                <a class="middle nav-link px-0 text-capitalize d-inline-block active"
+                                    aria-current="page" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="middle nav-link px-0 text-capitalize d-inline-block"
+                                    href="#buisness">Bussiness Types</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="middle nav-link px-0 text-capitalize d-inline-block"
+                                    href="#developers">Developers</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="middle nav-link px-0 text-capitalize d-inline-block"
+                                    href="#partners">Partners</a>
+                            </li>
+                            <li class="nav-item px-3 pe-lg-0 ms-lg-3 ms-xl-5 ps-lg-1">
+                                <a class="nav-link text-capitalize free-trial-btn d-inline-block" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="middle nav-link px-0 text-capitalize d-inline-block"
+                                    href="#content">Content</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!----- NAVBAR ENDS ----------------------------->
+            <div class="container container_modified">
+                <div
+                    class="row align-items-center justify-content-center justify-content-lg-between pt-xl-4 hero-content">
+                    <div class="col-12 col-lg-6 col-xl-5 col-xxl-6 z-5 mb-4 mb-sm-5 mb-lg-0 pt-4 pt-sm-5 pt-xl-0    hero02"
+                        id="hero02">
+                        <div class="pt-lg-5 mt-lg-5 mt-xl-0 pt-xl-0">
+                            <h1 class=" heading white mb-3 white">We didn't Invent Payment Processing. We just made it
+                                better.</h1>
+                            <p class="para light-blue mb-0 pe-xxl-5">Companies of all sizes use FinZeo financial
+                                software and APIs to
+                                manage their business from accepting payments to sending payouts, Instant Bank
+                                Verification, mobile
+                                payments, text to pay, IVR, and much more.</p>
+                            <div class="mt-3 pt-3">
+                                <button class="common-btn text-capitalize me-1">Start Now</button>
+                                <button class="common-btn text-capitalize ms-sm-3">Contact Sales</button>
+                            </div>
+                            <img class="arrow01 d-none d-xl-block" src="./assets/img/svg/arrow01_animated.svg"
+                                alt="arrow01_animated">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-7 z-5 my-4 my-lg-0 d-xl-none" data-aos="zoom-in"
+                        data-aos-delay="1500">
+                        <img class="w-100 h-100" src="./assets/img/png/hero-section-img.png" alt="hero-section-img">
+                    </div>
+                </div>
+                <img class="dots-img" src="./assets/img/png/dots-img.png" alt="dots-img">
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 z-5 hero_img01">
+                <img class="w-100 h-100" src="./assets/img/png/hero-section-img.png" alt="hero-section-img">
+            </div>
+            <img class="w-100 position-absolute bottom-0 z-5 d-none d-xl-block" src="./assets/img/png/wave-img.png"
+                alt="wave-img">
+        </div>
+
+        <!------------ GROW SECTION ----------------------->
+        <div class="position-relative">
+            <div class="container container_modified py-5">
+                <div class="row align-items-center justify-content-center justify-content-lg-between" id="buisness">
+                    <div class="col-12 col-md-10 col-lg-5    grow03">
+                        <img class="w-100 h-100" src="./assets/img/png/grow.png" alt="grow">
+                    </div>
+                    <div class="col-12 col-lg-6 my-5 my-lg-0    grow04">
+                        <p class="font-xs sub-heading black mb-2 text-uppercase">All in one financial platform</p>
+                        <h2 class="heading black">The Platform to Help <span class="blue">Grow Your Business</span></h2>
+                        <p class="para gray pb-1">FinZeo’s financial platform is the technology built to grow
+                            <br class="d-none d-xl-block">
+                            big and small businesses.</p>
+                        <button class="blue-btn text-capitalize me-1">Learn More</button>
+                        <img class="arrow02" src="./assets/img/svg/arrow02_animated.svg" alt="arrow02_animated">
+                    </div>
+                </div>
+            </div>
+            <!-- <img class="side-img01 position-absolute" src="./assets/img/png/side-img01.png" alt="side-img01"> -->
+            <img class="side-img01 position-absolute" src="./assets/img/svg/side-img01.svg" alt="side-img01">
+        </div>
+
+        <!------------ FINZEO CARDS SECTION ---------------->
+        <div class="position-relative">
+            <div class="container container_modified pb-5 py-sm-5">
+                <div class="row align-items-center justify-content-center text-center pt-xl-5 mt-xl-5" id="content">
+                    <div class="col-12 mb-xl-5 pb-xl-5 fienzo-platform05">
+                        <h2 class="heading black">The <span class="blue">FinZeo</span> Platform</h2>
+                        <p class="para gray mb-4 pb-2 mb-sm-5">Connect your mobile, online and in store payments into
+                            one system. Turn on a new
+                            <br>
+                            tool(s) as you need them, everything you need is in the FinZeo platform. </p>
+                    </div>
+                </div>
+                <img class="side-img02 position-absolute" src="./assets/img/svg/side-img02.svg" alt="side-img02">
+                <!------------ FINZEO CARDS ------------>
+                <div class="d-none d-lg-block">
+                    <div class="row justify-content-center text-center pb-5 mb-5">
+                        <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-lg-5 col-xl-3">
+                            <div class="finzeo-card px-3 py-4 cursor-pointer">
+                                <div class="px-1 pt-4 pb-1">
+                                    <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/png/finzeo-card-1.webp" alt="finzeo-card">
+                                    </div>
+                                    <h5 class="font-sm blue mb-3 mt-3 pt-2 pb-1 fw_bold">Online Services</h5>
+                                    <p class="para gray">Accept online payments on any channel via credit and debit
+                                        card, mobile
+                                        wallets, whatever your business model. Setup is quick and easy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"
+                            class="col-12 col-lg-5 col-xl-3">
+                            <div class="finzeo-card px-3 py-4 cursor-pointer">
+                                <div class="px-1 pt-4 pb-1">
+                                    <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/png/finzeo-card-2.webp" alt="finzeo-card">
+                                    </div>
+                                    <h5 class="font-sm blue mb-3 mt-3 pt-2 pb-1 fw_bold">Mobile</h5>
+                                    <p class="para gray">Placerat porttitor risus mi lacinia consectetur quisque massa,
+                                        nam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="110"
+                            class="col-12 col-lg-5 col-xl-3">
+                            <div class="finzeo-card px-3 py-4 cursor-pointer mt-4 pt-3 mt-xl-0 pt-xl-0">
+                                <div class="px-1 pt-4 pb-1">
+                                    <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/png/finzeo-card-3.webp" alt="finzeo-card">
+                                    </div>
+                                    <h5 class="font-sm blue mb-3 mt-3 pt-2 pb-1 fw_bold">Point of Sale</h5>
+                                    <p class="para gray">Use any terminal with your POS for simple payment acceptance
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="120"
+                            class="col-12 col-lg-5 col-xl-3">
+                            <div class="finzeo-card px-3 py-4 cursor-pointer mt-4 pt-3 mt-xl-0 pt-xl-0">
+                                <div class="px-1 pt-4 pb-1">
+                                    <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/png/finzeo-card-4.webp" alt="finzeo-card">
+                                    </div>
+                                    <h5 class="font-sm blue mb-3 mt-3 pt-2 pb-1 fw_bold">IVR pay by phone</h5>
+                                    <p class="para gray">Allow customers to make automated payments over the phone
+                                        without ever
+                                        interacting
+                                        with a live person.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="130"
+                            class="col-12 col-lg-5 col-xl-3">
+                            <div class="finzeo-card px-3 py-4 cursor-pointer mt-5 mt-xl-4 pt-3">
+                                <div class="px-1 pt-4 pb-1">
+                                    <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/png/finzeo-card-5.webp" alt="finzeo-card">
+                                    </div>
+                                    <h5 class="font-sm blue mb-3 mt-3 pt-2 pb-1 fw_bold">Virtual Terminals</h5>
+                                    <p class="para gray">Key in payments on your keyboard, phone or tablet and collect
+                                        payments in
+                                        seconds.
+                                        No
+                                        expensive hardware required. Use any Internet connected device.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="140"
+                            class="col-12 col-lg-5 col-xl-3">
+                            <div class="finzeo-card px-3 py-4 cursor-pointer mt-5 mt-xl-4 pt-3">
+                                <div class="px-1 pt-4 pb-1">
+                                    <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/png/finzeo-card-6.webp" alt="finzeo-card">
+                                    </div>
+                                    <h5 class="font-sm blue mb-3 mt-3 pt-2 pb-1 fw_bold">Instant Bank Verification</h5>
+                                    <p class="para gray">Conduct funding source verification quickly and easily for both
+                                        low risk merchant
+                                        accounts and high risk merchant accounts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="150"
+                            class="col-12 col-lg-5 col-xl-3 mt-4 mt-xl-0">
+                            <div class="finzeo-card px-3 py-4 cursor-pointer mt-5 mt-xl-4 pt-xl-3">
+                                <div class="px-1 pt-4 pb-1">
+                                    <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/svg/finzeo-card-7.svg" alt="finzeo-card">
+                                    </div>
+                                    <h5 class="font-sm blue mb-3 mt-3 pt-2 pb-1 fw_bold">Payment Gateways</h5>
+                                    <p class="para gray">The FinZeo gateway accepts multiple forms of payments, like;
+                                        credit / debit
+                                        cards,
+                                        eCheck, ACH same day or scheduled. Get pay your way</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------ FINZEO CARDS SLIDER ------------>
+                <div class="responsive px-sm-3 d-lg-none pb-4 mb-5 finzeo-slider">
+                    <div>
+                        <div class="finzeo-card px-3 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center">
+                            <div class="px-1 pt-md-4 pb-1">
+                                <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/png/finzeo-card-1.webp" alt="finzeo-card">
+                                </div>
+                                <h5 class="font-sm blue my-2 my-sm-3 pt-sm-2 pb-sm-1 fw_bold">Online Services</h5>
+                                <p class="para gray">Accept online payments on any channel via credit and debit card,
+                                    mobile
+                                    wallets, whatever your business model. Setup is quick and easy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="finzeo-card px-3 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center">
+                            <div class="px-1 pt-md-4 pb-1">
+                                <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/png/finzeo-card-2.webp" alt="finzeo-card">
+                                </div>
+                                <h5 class="font-sm blue my-2 my-sm-3 pt-sm-2 pb-sm-1 fw_bold">Mobile</h5>
+                                <p class="para gray">Placerat porttitor risus mi lacinia consectetur quisque massa, nam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="finzeo-card px-3 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center">
+                            <div class="px-1 pt-md-4 pb-1">
+                                <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/png/finzeo-card-3.webp" alt="finzeo-card">
+                                </div>
+                                <h5 class="font-sm blue my-2 my-sm-3 pt-sm-2 pb-sm-1 fw_bold">Point of Sale</h5>
+                                <p class="para gray">Use any terminal with your POS for simple payment acceptance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="finzeo-card px-3 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center">
+                            <div class="px-1 pt-md-4 pb-1">
+                                <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/png/finzeo-card-4.webp" alt="finzeo-card">
+                                </div>
+                                <h5 class="font-sm blue my-2 my-sm-3 pt-sm-2 pb-sm-1 fw_bold">IVR pay by phone</h5>
+                                <p class="para gray">Allow customers to make automated payments over the phone without
+                                    ever interacting
+                                    with a live person.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="finzeo-card px-3 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center mt-3 pt-3">
+                            <div class="px-1 pt-md-4 pb-1">
+                                <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/png/finzeo-card-5.webp" alt="finzeo-card">
+                                </div>
+                                <h5 class="font-sm blue my-2 my-sm-3 pt-sm-2 pb-sm-1 fw_bold">Virtual Terminals</h5>
+                                <p class="para gray">Key in payments on your keyboard, phone or tablet and collect
+                                    payments in seconds.
+                                    No
+                                    expensive hardware required. Use any Internet connected device.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="finzeo-card px-3 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center mt-3 pt-3">
+                            <div class="px-1 pt-md-4 pb-1">
+                                <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/png/finzeo-card-6.webp" alt="finzeo-card">
+                                </div>
+                                <h5 class="font-sm blue my-2 my-sm-3 pt-sm-2 pb-sm-1 fw_bold">Instant Bank Verification
+                                </h5>
+                                <p class="para gray">Conduct funding source verification quickly and easily for both low
+                                    risk merchant
+                                    accounts and high risk merchant accounts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="finzeo-card px-3 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center mt-3 pt-3">
+                            <div class="px-1 pt-md-4 pb-1">
+                                <div class="fin-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/svg/finzeo-card-7.svg" alt="finzeo-card">
+                                </div>
+                                <h5 class="font-sm blue my-2 my-sm-3 pt-sm-2 pb-sm-1 fw_bold">Payment Gateways</h5>
+                                <p class="para gray">The FinZeo gateway accepts multiple forms of payments, like; credit
+                                    / debit cards,
+                                    eCheck, ACH same day or scheduled. Get pay your way</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------ MERCHANT ACCOUNT SECTION ------------>
+        <div class="position-relative merchant-bg">
+            <img class="merchant-dots-img" src="./assets/img/png/dots-img.png" alt="dots-img">
+            <div class="container container_modified py-5">
+                <div class="row align-items-center justify-content-center py-lg-5 text-center" id="partners">
+                    <div class="col-12 col-md-10 col-lg-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <h2 class="heading white px-sm-4 mb-4 mb-lg-5">Get your New Low or High Risk Merchant Account
+                            Pre-approved
+                        </h2>
+                        <div
+                            class="d-flex flex-column flex-sm-row align-items-center justify-content-center position-relative">
+                            <img class="arrow03 d-none d-lg-block" src="./assets/img/svg/arrow01_animated.svg"
+                                alt="arrow01_animated">
+                            <button class="common-btn text-capitalize me-sm-1">Get Pre-Approval</button>
+                            <button class="common-btn text-capitalize ms-sm-3 mt-2 mt-sm-0">Schedule Call</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="merchant-dots-img-2" src="./assets/img/png/dots-img.png" alt="dots-img">
+            <img class="merchant-account-side-img d-none d-sm-block"
+                src="./assets/img/svg/merchant-account-side-img.svg" alt="merchant-account-side-img">
+        </div>
+
+        <!------------ OUR SERVICES SECTION ---------------->
+        <div class="position-relative no-scroll-x">
+            <img class="servimg-01 position-absolute" src="./assets/img/svg/side-img02.svg" alt="side-img02">
+            <div class="container container_modified py-5">
+                <div class="row align-items-center justify-content-center text-center pt-xl-5 mt-xl-5" id="services">
+                    <div class="col-12 pb-2 pb-sm-3 mb-sm-4 mb-lg-5 pb-xl-4" data-aos="fade-right"
+                        data-aos-duration="800">
+                        <h2 class="heading black">Our <span class="blue">Services</span></h2>
+                    </div>
+                </div>
+                <!------------ OUR SERVICES CARDS ---------------->
+                <div class="d-none d-lg-block">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-lg-4" data-aos="fade-up" data-sos-delay="100" data-aos-duration="800">
+                            <div class="service-card px-2 py-4 cursor-pointer">
+                                <div class="px-3">
+                                    <div class="service-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/svg/service-card-img-1.svg" alt="our-services-img01">
+                                    </div>
+                                    <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">ACH Processing
+                                    </h5>
+                                    <p class="para gray mb-1">We offer simple, safe, and speedy electronic ACH credits
+                                        and debits directly
+                                        to and from your customer’s bank accounts.</p>
+                                    <ul class="text-start mb-0">
+                                        <li class="para gray">No reserve needed</li>
+                                        <li class="para gray">Late cut-off times</li>
+                                        <li class="para gray">one time payments</li>
+                                        <li class="para gray">Recurring payments</li>
+                                        <li class="para gray">pay bills easily</li>
+                                        <li class="para gray">Invoicing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4" data-aos="fade-up" data-sos-delay="110" data-aos-duration="800">
+                            <div class="service-card px-2 py-4 cursor-pointer">
+                                <div class="px-3">
+                                    <div class="service-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/svg/service-card-img-2.svg" alt="our-services-img">
+                                    </div>
+                                    <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">Credit/Debit
+                                        Card Processing
+                                    </h5>
+                                    <p class="para gray mb-1">Improve your collections by easily accepting
+                                        Visa/MasterCard debit and
+                                        credit card payments and mobile wallet payments in real time.</p>
+                                    <ul class="text-start mb-0">
+                                        <li class="para gray">Increase cash flow</li>
+                                        <li class="para gray">convenient payments</li>
+                                        <li class="para gray">one time payments</li>
+                                        <li class="para gray">immediate processing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4" data-aos="fade-up" data-sos-delay="120" data-aos-duration="800">
+                            <div class="service-card px-3 py-4 cursor-pointer">
+                                <div class="px-3">
+                                    <div class="service-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/svg/service-card-img-3.svg" alt="our-services-img">
+                                    </div>
+                                    <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">ACH Processing
+                                    </h5>
+                                    <p class="para gray mb-1">We offer simple, safe, and speedy electronic ACH credits
+                                        and debits
+                                        directly to and from your customer’s bank accounts.</p>
+                                    <ul class="text-start mb-0">
+                                        <li class="para gray">No reserve needed</li>
+                                        <li class="para gray">Late cut-off times</li>
+                                        <li class="para gray">one time payments</li>
+                                        <li class="para gray">Recurring payments</li>
+                                        <li class="para gray">pay bills easily</li>
+                                        <li class="para gray">Invoicing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center pb-5 mb-5">
+                        <div class="col-12 col-lg-4 mt-3 pt-1" data-aos="fade-up" data-sos-delay="130"
+                            data-aos-duration="800">
+                            <div class="service-card px-1 py-4 cursor-pointer">
+                                <div class="px-3">
+                                    <div class="service-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/svg/service-card-img-4.svg" alt="our-services-img">
+                                    </div>
+                                    <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">Text to Pay
+                                    </h5>
+                                    <p class="para gray mb-1">Allow customers to make payments via texting from their
+                                        smartphone</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-3 pt-1" data-aos="fade-up" data-sos-delay="140"
+                            data-aos-duration="800">
+                            <div class="service-card px-1 py-4 cursor-pointer">
+                                <div class="px-3">
+                                    <div class="service-card-img d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/svg/service-card-img-5.svg" alt="our-services-img">
+                                    </div>
+                                    <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">buy now Pay
+                                        later</h5>
+                                    <p class="para gray mb-1">Let consumers get what they need today and have the
+                                        convenience of paying
+                                        later</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------ OUR SERVICES CARDS SLIDER ------------>
+                <div class="responsive px-sm-3 d-lg-none pb-4 pb-sm-5 mb-5 finzeo-slider">
+                    <div>
+                        <div class="service-card px-2 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center">
+                            <div class="px-3">
+                                <div class="service-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/svg/service-card-img-1.svg" alt="our-services-img01">
+                                </div>
+                                <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">ACH Processing
+                                </h5>
+                                <p class="para gray mb-1">We offer simple, safe, and speedy electronic ACH credits and
+                                    debits directly
+                                    to and from your customer’s bank accounts.</p>
+                                <ul class="text-start mb-0">
+                                    <li class="para gray">No reserve needed</li>
+                                    <li class="para gray">Late cut-off times</li>
+                                    <li class="para gray">one time payments</li>
+                                    <li class="para gray">Recurring payments</li>
+                                    <li class="para gray">pay bills easily</li>
+                                    <li class="para gray">Invoicing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="service-card px-2 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center">
+                            <div class="px-3">
+                                <div class="service-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/svg/service-card-img-2.svg" alt="our-services-img">
+                                </div>
+                                <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">Credit/Debit Card
+                                    Processing
+                                </h5>
+                                <p class="para gray mb-1">Improve your collections by easily accepting Visa/MasterCard
+                                    debit and
+                                    credit card payments and mobile wallet payments in real time.</p>
+                                <ul class="text-start mb-0">
+                                    <li class="para gray">Increase cash flow</li>
+                                    <li class="para gray">convenient payments</li>
+                                    <li class="para gray">one time payments</li>
+                                    <li class="para gray">immediate processing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="service-card px-3 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center">
+                            <div class="px-3">
+                                <div class="service-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/svg/service-card-img-3.svg" alt="our-services-img">
+                                </div>
+                                <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">ACH Processing
+                                </h5>
+                                <p class="para gray mb-1">We offer simple, safe, and speedy electronic ACH credits and
+                                    debits
+                                    directly to and from your customer’s bank accounts.</p>
+                                <ul class="text-start mb-0">
+                                    <li class="para gray">No reserve needed</li>
+                                    <li class="para gray">Late cut-off times</li>
+                                    <li class="para gray">one time payments</li>
+                                    <li class="para gray">Recurring payments</li>
+                                    <li class="para gray">pay bills easily</li>
+                                    <li class="para gray">Invoicing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="service-card px-1 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center">
+                            <div class="px-3">
+                                <div class="service-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/svg/service-card-img-4.svg" alt="our-services-img">
+                                </div>
+                                <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">Text to Pay</h5>
+                                <p class="para gray mb-1">Allow customers to make payments via texting from their
+                                    smartphone</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="service-card px-1 py-4 cursor-pointer mx-2 mx-sm-3 my-2 text-center">
+                            <div class="px-3">
+                                <div class="service-card-img d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/svg/service-card-img-5.svg" alt="our-services-img">
+                                </div>
+                                <h5 class="font-sm black mb-2 pb-1 mt-3 pt-2 fw_bold text-capitalize">buy now Pay later
+                                </h5>
+                                <p class="para gray mb-1">Let consumers get what they need today and have the
+                                    convenience of paying
+                                    later</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------ FEATURES SECTION -------------------->
+        <div class="position-relative bg-black pb-5">
+            <img class="position-absolute dots-services-img1 d-none d-md-block"
+                src="./assets/img/png/dots-services-section.png" alt="dots-services-section">
+            <div class="container container_modified py-4 py-sm-5">
+                <!------------ OUR FEATURES CARDS ---------------->
+                <div class="row justify-content-between text-center mt-5" id="blog">
+                    <div class="col-12" data-aos="fade-right" data-aos-duration="800">
+                        <h2 class="heading white mb-4 mb-lg-5 pb-sm-5">Features</h2>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block">
+                    <div class="row justify-content-between text-center mb-sm-5 pb-sm-5 px-xl-3" id="blog">
+                        <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4">
+                            <div class="features-card p-3 text-center">
+                                <div class="p-3">
+                                    <div class="features-card-img">
+                                        <img class="mx-auto" src="./assets/img/png/services-img1.webp"
+                                            alt="services-img1">
+                                    </div>
+                                    <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">API’s</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4 mt-4 mt-sm-0">
+                            <div class="features-card p-3">
+                                <div class="p-3">
+                                    <div class="features-card-img">
+                                        <img src="./assets/img/png/services-img2.webp" alt="services-img">
+                                    </div>
+                                    <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">Website Plugins</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="800"
+                            class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3 mt-lg-0 pt-lg-0">
+                            <div class="features-card p-3">
+                                <div class="p-3">
+                                    <div class="features-card-img">
+                                        <img src="./assets/img/png/services-img3.webp" alt="services-img">
+                                    </div>
+                                    <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">Analytics</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3">
+                            <div class="features-card p-3">
+                                <div class="p-3">
+                                    <div class="features-card-img">
+                                        <img src="./assets/img/png/services-img4.webp" alt="services-img1">
+                                    </div>
+                                    <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">Invoicing</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3">
+                            <div class="features-card py-3">
+                                <div class="py-3">
+                                    <div class="features-card-img">
+                                        <img src="./assets/img/png/services-img5.webp" alt="services-img">
+                                    </div>
+                                    <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3"> Real Time Performance
+                                        Analytics</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="800" class="col-12 col-sm-6 col-lg-4 mt-4 pt-md-3">
+                            <div class="features-card p-3">
+                                <div class="p-3">
+                                    <div class="features-card-img">
+                                        <img src="./assets/img/png/services-img6.webp" alt="services-img">
+                                    </div>
+                                    <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">Reporting Engine</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------ OUR FEATURES CARDS SLIDER ------------>
+                <div class="responsive d-lg-none mb-sm-5 pb-4 pb-sm-5 finzeo-slider features-slider">
+                    <div>
+                        <div class="features-card p-3 text-center">
+                            <div class="p-3">
+                                <div class="features-card-img">
+                                    <img class="mx-auto" src="./assets/img/png/services-img1.webp" alt="services-img1">
+                                </div>
+                                <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">API’s</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="features-card p-3 text-center">
+                            <div class="p-3">
+                                <div class="features-card-img">
+                                    <img class="mx-auto" src="./assets/img/png/services-img2.webp" alt="services-img">
+                                </div>
+                                <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">Website Plugins</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="features-card p-3 text-center">
+                            <div class="p-3">
+                                <div class="features-card-img">
+                                    <img class="mx-auto" src="./assets/img/png/services-img3.webp" alt="services-img">
+                                </div>
+                                <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">Analytics</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="features-card p-3 text-center">
+                            <div class="p-3">
+                                <div class="features-card-img">
+                                    <img class="mx-auto" src="./assets/img/png/services-img4.webp" alt="services-img1">
+                                </div>
+                                <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">Invoicing</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="features-card py-3 text-center">
+                            <div class="py-3">
+                                <div class="features-card-img">
+                                    <img class="mx-auto" src="./assets/img/png/services-img5.webp" alt="services-img">
+                                </div>
+                                <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3"> Real Time Performance <br>
+                                    Analytics</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="features-card p-3 text-center">
+                            <div class="p-3">
+                                <div class="features-card-img">
+                                    <img class="mx-auto" src="./assets/img/png/services-img6.webp" alt="services-img">
+                                </div>
+                                <h3 class="white font-md fw_bold ff-gilroy-bold mb-3 mt-3">Reporting Engine</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="position-absolute dots-services-img2 d-none d-md-block"
+                src="./assets/img/png/dots-services-section.png" alt="dots-services-section">
+        </div>
+
+        <!------------ GET STARTED SECTION -------------------->
+        <div class="position-relative no-scroll-x">
+            <img class="started-side-img01 position-absolute" src="./assets/img/svg/side-img02.svg" alt="side-img02">
+            <div class="container container_modified py-5">
+                <div class="row align-items-center justify-content-center text-center pt-xl-5 mt-xl-5">
+                    <div class="col-12" data-aos="zoom-in" data-aos-duration="800">
+                        <img class="w-100" src="./assets/img/png/get-started-img.png" alt="get-started-img">
+                    </div>
+
+                    <div class="col-10 col-md-8 started-content mb-5 mb-md-0" id="content">
+                        <div class="py-4 py-lg-5 text-center started-card mx-auto" data-aos="flip-left"
+                            data-aos-duration="800">
+                            <h2 class="heading black pb-1">Let’s Get you <span class="blue">Started</span></h2>
+                            <p class="para gray pb-2 pb-sm-3">Create Your Free Account with Finzeo</p>
+                            <button class="blue-btn text-capitalize me-1">Join us Today</button>
+                            <img class="arrow02" src="./assets/img/svg/arrow02_animated.svg" alt="arrow02_animated">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-7" id="developers" data-aos="fade-right" data-aos-duration="800">
+                        <h6 class="sub-heading font-xs custom-letter-spacing">API HEAVEN</h6>
+                        <h2 class="heading black pb-1">Built by <span class="blue">Developers</span> for <span
+                                class="blue">Developers</span></h2>
+                        <h6 class="sub-heading font-xs pb-1">Powerful and easy to use API's</h6>
+                        <p class="para gray mb-sm-4 px-2 px-sm-0">We know the only thing worse than no APIi s a poorly
+                            written API.
+                            Our
+                            API's
+                            <br class="d-none d-sm-block">
+                            are built to get you up and processing as quickly as possible. You can even
+                            <br class="d-none d-sm-block">
+                            test your code in the FinZeo sandbox Before you go live.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">
+                            <p class="para blue mb-1 mb-sm-3">Tools For Your Integration</p>
+                            <p class="para blue ms-sm-4">Prebuilt Integrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <img class="started-side-img02 position-absolute" src="./assets/img/png/side-img01.png" alt="side-img01"> -->
+            <img class="started-side-img02 position-absolute" src="./assets/img/svg/side-img01.svg" alt="side-img01">
+        </div>
+
+        <!------------ FOOTER SECTION -------------------->
+        <div class="footer-section position-relative no-scroll-x">
+            <img class="position-absolute footer-dots" src="./assets/img/png/dots-img.png" alt="dots-img">
+            <div class="container custom-container pt-5 pb-sm-4 pb-lg-5 pb-xl-3">
+                <div class="row justify-content-between align-items-center align-items-lg-start">
+                    <div class="col-12 col-lg-4 col-xl-5">
+                        <a href="#"
+                            class="d-flex align-items-center justify-content-center justify-content-lg-start mb-3 pb-md-1 text-decoration-none">
+                            <img src="./assets/img/svg/finzeo-logo.svg" alt="finzeo-logo" />
+                        </a>
+                        <p class="font-xs sub-heading white text-center text-lg-start mb-0 pb-3 d-none d-lg-block">
+                            (c) <span id="current-year"></span> Finzeo. <br>
+                            All Rights Reserved
+                        </p>
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <a class="social-icon" href="https://www.facebook.com/" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_0_871)">
+                                        <path
+                                            d="M24 12C24 5.37075 18.6248 0 12 0C5.37075 0 0 5.37075 0 12C0 17.988 4.38675 22.953 10.125 23.8522V15.4695H7.07775V12.0007H10.125V9.3555C10.125 6.34875 11.9138 4.68825 14.6558 4.68825C15.969 4.68825 17.3438 4.92225 17.3438 4.92225V7.875H15.828C14.34 7.875 13.875 8.80125 13.875 9.75V12H17.2028L16.668 15.4688H13.875V23.8515C19.6087 22.9522 24 17.9872 24 11.9992V12Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_0_871">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a class="social-icon mx-3" href="https://twitter.com/" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 0C5.37321 0 0 5.37321 0 12C0 18.6268 5.37321 24 12 24C18.6268 24 24 18.6268 24 12C24 5.37321 18.6268 0 12 0ZM17.767 9.04554C17.775 9.17143 17.775 9.30268 17.775 9.43125C17.775 13.3634 14.7804 17.8929 9.30804 17.8929C7.62054 17.8929 6.05625 17.4027 4.73839 16.5589C4.97946 16.5857 5.20982 16.5964 5.45625 16.5964C6.84911 16.5964 8.12946 16.125 9.15 15.3268C7.84286 15.3 6.74464 14.4429 6.36964 13.2643C6.82768 13.3313 7.24018 13.3313 7.71161 13.2107C7.03855 13.074 6.43359 12.7084 5.99951 12.1762C5.56542 11.644 5.32898 10.9779 5.33036 10.2911V10.2536C5.72411 10.4759 6.1875 10.6125 6.67232 10.6312C6.26476 10.3596 5.93051 9.99164 5.69923 9.5599C5.46794 9.12817 5.34676 8.64603 5.34643 8.15625C5.34643 7.60179 5.49107 7.09554 5.75089 6.65625C6.49795 7.5759 7.43017 8.32806 8.48696 8.86384C9.54375 9.39961 10.7014 9.70702 11.8848 9.76607C11.4643 7.74375 12.975 6.10714 14.7911 6.10714C15.6482 6.10714 16.4196 6.46607 16.9634 7.04464C17.6357 6.91875 18.2786 6.66696 18.8518 6.32946C18.6295 7.01786 18.1634 7.59911 17.5446 7.96607C18.1446 7.90179 18.7232 7.73571 19.2589 7.50268C18.8545 8.09732 18.3482 8.625 17.767 9.04554V9.04554Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                            <a class="social-icon" href="https://www.linkedin.com/" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 0C5.3725 0 0 5.3725 0 12C0 18.6275 5.3725 24 12 24C18.6275 24 24 18.6275 24 12C24 5.3725 18.6275 0 12 0ZM9.0625 16.9738H6.6325V9.15375H9.0625V16.9738ZM7.8325 8.19375C7.065 8.19375 6.56875 7.65 6.56875 6.9775C6.56875 6.29125 7.08 5.76375 7.86375 5.76375C8.6475 5.76375 9.1275 6.29125 9.1425 6.9775C9.1425 7.65 8.6475 8.19375 7.8325 8.19375ZM17.9375 16.9738H15.5075V12.64C15.5075 11.6313 15.155 10.9462 14.2763 10.9462C13.605 10.9462 13.2063 11.41 13.03 11.8563C12.965 12.015 12.9488 12.24 12.9488 12.4638V16.9725H10.5175V11.6475C10.5175 10.6713 10.4862 9.855 10.4537 9.1525H12.565L12.6763 10.2388H12.725C13.045 9.72875 13.8288 8.97625 15.14 8.97625C16.7388 8.97625 17.9375 10.0475 17.9375 12.35V16.9738Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-8 col-xl-7 mt-5 mt-lg-0">
+                        <div class="row justify-content-center justify-content-sm-start">
+                            <div class="col-6 col-sm-4 order-0 order-lg-0 text-center text-sm-start">
+                                <h6 class="font-md fw_bold ff-gilroy-bold white mb-3 mb-sm-4 pb-1 text-uppercase">
+                                    Services</h6>
+                                <ul class="list-unstyled footer-links">
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            ACH Payments</a>
+                                    </li>
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            buy now, pay later</a>
+                                    </li>
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            credit & debit card processing</a>
+                                    </li>
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            e-check processing</a>
+                                    </li>
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            mobile instant funding</a>
+                                    </li>
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            instant banking verification</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="col-6 col-sm-4 order-2 order-lg-1 ps-lg-5 text-center text-sm-start mt-4 mt-sm-0">
+                                <h6 class="font-md fw_bold ff-gilroy-bold white mb-3 mb-sm-4 pb-1 text-uppercase">
+                                    resources</h6>
+                                <ul class="list-unstyled footer-links">
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            blog</a>
+                                    </li>
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-4 order-1 order-lg-2 ps-md-4 text-center text-sm-start">
+                                <h6 class="font-md fw_bold ff-gilroy-bold white mb-3 mb-sm-4 pb-1 text-uppercase">
+                                    company</h6>
+                                <ul class="list-unstyled footer-links">
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            Company</a>
+                                    </li>
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            About Us</a>
+                                    </li>
+                                    <li class="mb-2 mb-sm-3 pb-1">
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            Contact</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-heading white text-decoration-none text-capitalize font-xs"
+                                            href="#">
+                                            Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-2 mt-lg-0 d-lg-none">
+                        <p class="font-xs sub-heading white text-center text-lg-start mb-0 pb-3">
+                            (c) <span id="current-year-now"></span> Finzeo. <br>
+                            All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <a href=" #header" id="scroll" style="display: none"><span></span></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- ===================================== SLICK LINKS =========================== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- SLIDER  -->
+    <script>
+        $('.responsive').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+    <!-- BACK TO TOP  -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $("#scroll").fadeIn();
+                } else {
+                    $("#scroll").fadeOut();
+                }
+            });
+            $("#scroll").click(function () {
+                $("html, body").animate({
+                        scrollTop: 0,
+                    },
+                    40
+                );
+                return false;
+            });
+        });
+    </script>
+    <!-- PRELOADER  -->
+    <script>
+        var preloader = document.getElementById("loading");
+        var body = document.querySelector("body")
+        var html = document.querySelector("html")
+        setTimeout(function loader() {
+            preloader.style.display = "none";
+            body.classList.remove('no-scroll-y');
+            body.classList.add('no-scroll-x');
+            html.classList.add('no-scroll-x');
+        }, 1500);
+    </script>
+    <!-- YEAR -->
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("current-year").innerHTML = year;
+        document.getElementById("current-year-now").innerHTML = year;
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+    <!-- GSAP ANIMATION -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        // var content01 = document.getElementById('content01');
+        // TweenLite and TweenMax with "gsap"
+        // TweenMax.fromTo(content01, 4, {
+        //     delay: '1',
+        //     opacity: 0,
+        //     x: -50
+        // }, {
+        //     opacity: 1,
+        //     x: 0
+        // });
+
+        // var hero02 = document.getElementById('hero02');
+        // TweenMax.fromTo(hero02, 4, {
+        //     delay: '1',
+        //     opacity: 0,
+        //     y: -50
+        // }, {
+        //     opacity: 1,
+        //     y: 50
+        // });
+
+        // var grow03 = document.getElementById('grow03');
+        // TweenMax.fromTo(grow03, 2, {
+        //     delay: '4',
+        //     opacity: 0,
+        //     x: -50
+        // }, {
+        //     opacity: 1,
+        //     x: 50
+        // });
+
+        // var grow04 = document.getElementById('grow04');
+        // TweenMax.fromTo(grow04, 2, {
+        //     delay: '4',
+        //     opacity: 0,
+        //     x: 50
+        // }, {
+        //     opacity: 1,
+        //     x: 0
+        // });
+
+        gsap.registerPlugin(ScrollTrigger);
+        const tl = gsap.timeline({
+            ScrollTrigger: {
+                trigger: '.finzo-parent',
+                markers: 'true',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: 1,
+                ease: 'linear',
+            }
+        })
+
+        tl.from('.finzo-parent .content01', 1, {
+            delay: '1',
+            opacity: 0,
+            x: -100
+        })
+        tl.to('.finzo-parent .content01', 1, {
+            opacity: 1,
+            x: 0
+        })
+
+        tl.from('.finzo-parent .grow04', 1, {
+            delay: '0',
+            opacity: 0,
+            x: 100
+        })
+        tl.to('.finzo-parent .grow04', 1, {
+            opacity: 1,
+            x: 0
+        });
+
+        tl.from('.finzo-parent .grow03', 1, {
+            delay: '0',
+            opacity: 0,
+            x: -50
+        })
+        tl.to('.finzo-parent .grow03', 1, {
+            opacity: 1,
+            x: 0
+        });
+
+        tl.from('.finzo-parent .fienzo-platform05', 1, {
+            delay: '0',
+            opacity: 0,
+            y: 50,
+            scale: .5,
+        })
+        tl.to('.finzo-parent .fienzo-platform05', 1, {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+        });
+
+        var hero02 = document.getElementById('hero02');
+        TweenMax.fromTo(hero02, 2.2, {
+            delay: '1.5',
+            opacity: 0,
+            y: -100
+        }, {
+            opacity: 1,
+            y: 0
+        });
+    </script>
+</body>
+
+</html>
